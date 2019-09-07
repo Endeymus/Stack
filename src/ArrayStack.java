@@ -17,6 +17,7 @@ public class ArrayStack implements Stack {
         Object[] newElements = new Object[capacity * 2];
         for (int i=0; i < size; i++){
             newElements[i] = elements[i];
+
         }
         elements = newElements;
     }
