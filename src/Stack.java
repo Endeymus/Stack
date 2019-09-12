@@ -4,4 +4,5 @@ public interface Stack {
      Object pop();
      Object peek();
      int size();
+    //void PutIn(int pos, Object value);
 }

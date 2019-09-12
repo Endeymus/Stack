@@ -6,7 +6,7 @@ public class StackTest {
         {
             System.out.println("Введите текст: ");
             String s = in.nextLine();
-            stack.push(s + i);
+            stack.push(s);
         }
     }
 
@@ -20,15 +20,22 @@ public class StackTest {
     
     public static void main(String[] args)
     {
-        {
+        /*{
             LinkedStack stack = new LinkedStack();
             fill(stack);
             dump(stack);
-        }
+        }*/
         {
             ArrayStack stack = new ArrayStack();
             fill(stack);
-            dump(stack);
+            stack.OutA();
+           System.out.println(stack.size());
+           /*stack.ensureCapacity(stack.size()+1);
+            System.out.println(stack.size());*/
+            //dump(stack);
+            stack.PutIn(2, 99);
+            stack.OutA();
         }
+
     }
 }
